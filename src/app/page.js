@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import supermarketBg from './assets/supermarket.png';
 
 export default function Home() {
   return (
@@ -8,7 +7,7 @@ export default function Home() {
       {/* Background image container */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={supermarketBg}
+          src="/images/supermarket.png"
           alt="Supermarket background"
           fill
           priority

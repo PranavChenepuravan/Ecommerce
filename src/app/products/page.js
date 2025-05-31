@@ -4,9 +4,6 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, selectCartItems } from '@/lib/features/cartSlice';
 import Image from 'next/image';
-import riceImage from '../assets/cartitems/rice.jpg';
-import orangeImage from '../assets/cartitems/orenge.jpg';
-import tomatoImage from '../assets/cartitems/tomatoe.jpg';
 
 // Sample products data with actual items
 const products = [
@@ -14,7 +11,7 @@ const products = [
     id: 1,
     name: 'Premium Rice',
     price: 24.99,
-    image: riceImage,
+    image: '/images/cartitems/rice.jpg',
     rating: 4.8,
     reviews: 156,
     description: 'High-quality rice grains, perfect for every meal'
@@ -23,7 +20,7 @@ const products = [
     id: 2,
     name: 'Fresh Oranges',
     price: 5.99,
-    image: orangeImage,
+    image: '/images/cartitems/orenge.jpg',
     rating: 4.9,
     reviews: 203,
     description: 'Sweet and juicy oranges, rich in Vitamin C'
@@ -32,7 +29,7 @@ const products = [
     id: 3,
     name: 'Ripe Tomatoes',
     price: 3.99,
-    image: tomatoImage,
+    image: '/images/cartitems/tomatoe.jpg',
     rating: 4.7,
     reviews: 178,
     description: 'Fresh, ripe tomatoes perfect for salads and cooking'
